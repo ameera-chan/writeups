@@ -13,7 +13,6 @@ I'm XORta out of ideas for how to get the flag. Does this look like anything to 
 Clue
 
 XOR encryption
-
 Key: 0x61
 
 flag{c50d82c0a25f3e644d0702b41dbd085a}
