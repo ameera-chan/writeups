@@ -1,4 +1,4 @@
-![image 6](https://github.com/user-attachments/assets/aab8f09c-8ada-4cf8-913a-bbec469524f5)## Coding Mountains
+## Coding Mountains
 
 ```
 Author: @Soups71I
