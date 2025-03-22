@@ -75,4 +75,4 @@ This ensures that when `flaghasher` runs `md5sum`, it will execute **our fake sc
 ./flaghasher
 ```
 
-![image.png](image.png)
+![image](https://github.com/user-attachments/assets/b0fa8102-a512-4570-8c0b-197436707092)
