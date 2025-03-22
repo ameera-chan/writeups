@@ -15,7 +15,7 @@ Hints:
 
 This challenge is the continuation of SSTI1, based on the title we could already know it is related to Server Side Template Injection attack. However, this challenge mentioned it has blocked certain characters.
 
-![1000170803.jpg](1000170803.jpg)
+![1000170803](https://github.com/user-attachments/assets/718192db-09ba-4b1c-b002-11bc159ea19e)
 
 We could not identified filtering used based on the website source code:
 
@@ -75,7 +75,8 @@ We will brute force to identify the correct payload based on Jinja2:
 
 We successfully identified the correct payload that successfully executed on the server:
 
-![image.png](image.png)
+![image](https://github.com/user-attachments/assets/706a2f6f-844d-4298-8ba8-fe5d4c8a4d4d)
+
 
 This is the full payload:
 
