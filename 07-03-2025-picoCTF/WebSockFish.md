@@ -54,11 +54,12 @@ Try understanding the code and how the websocket client is interacting with the 
 - `mate 9999999` → "Haha I think you're gonna drown in 9999999 moves."
 - `mate -9999999` / `mate 0` → "You may eventually checkmate me, but you will never break my spirit as a fish!!"
     
-    ![image.png](image.png)
-    
-    ![image.png](image%201.png)
-    
+    <img width="335" alt="image" src="https://github.com/user-attachments/assets/74c53fda-40c0-47e8-87c5-2566ba9d0e7c" />
 
+    
+    <img width="460" alt="image 1" src="https://github.com/user-attachments/assets/adab93fa-912b-447e-bab3-5f8ef6230c0c" />
+
+    
 ---
 
 ### **Identify the Exploitable Flaw**
@@ -90,6 +91,6 @@ Try understanding the code and how the websocket client is interacting with the 
 
 ---
 
-![image.png](image%202.png)
+<img width="308" alt="image 2" src="https://github.com/user-attachments/assets/b47ebe8c-6919-4e71-86f0-3a6081df7054" />
 
-![image.png](image%203.png)
+<img width="476" alt="image 3" src="https://github.com/user-attachments/assets/e14cd755-29a7-44e7-b9e8-c4d40bb6a4a4" />
