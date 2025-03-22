@@ -7,5 +7,5 @@ PicoCTF 2025 is a global cybersecurity challenge, and my team, **C1RY**, ranked 
 - **Team C1RY**:
 - Afif Jazimin (RE)
 - Nur Ameera Chan (Web Exploitation)
-- Kho Jun Lin (Cryptography)
-- Chang Kae Pin (Cryptography)
+- Kho Jun Lin (Cryptography/Forensics)
+- Chang Kae Pin (Cryptography/Forensics)
