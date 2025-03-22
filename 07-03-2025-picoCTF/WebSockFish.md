@@ -66,7 +66,7 @@ Try understanding the code and how the websocket client is interacting with the 
 
 - **Server Trusts Client Evaluations**:
     
-    The server does not validate the actual game state. It relies solely on client reported evaluations to determine if the user wins.
+    The server does not validate the actual game state. It depends on client evaluations to determine if the user wins or losses.
     
 - **Chat Response Patterns for `eval` Values**:
     - `eval -269` → "Don't think I'm gonna make it easy for you!"
