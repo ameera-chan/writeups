@@ -6,16 +6,16 @@ Author: Junias Bonou
 
 ### Description
 
-I found a web app that claims to be impossible to hack! Try it [here](http://verbal-sleep.picoctf.net:50313/)!
+I found a web app that claims to be impossible to hack!
 
 Hints:
 
 1. Backup files
 2. Rumor has it, the lead developer is a militant emacs user
 
-![image.png](image.png)
+![image](https://github.com/user-attachments/assets/1f6fff7c-1374-4f58-8a75-465325ecba96)
 
-![image.png](image%201.png)
+![image 1](https://github.com/user-attachments/assets/4965c5b4-fb74-46aa-846e-0face183baf1)
 
 In Emacs, when you edit and save a file, it often creates a backup copy of the original file by appending a "~" symbol to the filename. This backup file might contain the original code.
 
@@ -82,7 +82,7 @@ response = requests.post(url, data=data)
 print(response.text)
 ```
 
-![image.png](image%202.png)
+![image 2](https://github.com/user-attachments/assets/cc64e10d-bf6d-4998-848e-cd2d8865a2db)
 
 The warning triggers because it received an array instead of a string. PHP’s type juggling kicks in here, converting both arrays to "Array", which is why the hashes match.
 
