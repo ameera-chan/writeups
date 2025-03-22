@@ -82,5 +82,5 @@ We input the computed address into the program:
 ```
 Enter the address to jump to, ex => 0x12345: 0x5c6a291d12a7
 ```
+![image](https://github.com/user-attachments/assets/d5ecca14-1773-4815-be82-7b6271b6ee3a)
 
-![image.png](image.png)
