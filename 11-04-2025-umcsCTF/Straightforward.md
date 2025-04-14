@@ -31,9 +31,9 @@ This confirmed that I needed $3000 in my account, $1000 more than what I could n
 
 I noticed the website relied solely on HTTP cookies to identify users, making it vulnerable to **Cross-Site Request Forgery (CSRF)**. Here’s how I explored that path:
 
-![Screenshot 2025-04-14 171405.png](Straightforward%201d48e29fdec780c9a67dfbcfcd18ba73/7f2998c0-4319-442b-963d-e91c4c5b7051.png)
+![7f2998c0-4319-442b-963d-e91c4c5b7051](https://github.com/user-attachments/assets/524dcb00-9e93-46c7-b248-48a92f2dd2a5)
 
-![image.png](Straightforward%201d48e29fdec780c9a67dfbcfcd18ba73/image.png)
+![image](https://github.com/user-attachments/assets/c40228a1-b845-4209-80d2-fcb3462fcca2)
 
 ### **First Attempt: CSRF on `/claim`**
 
@@ -178,9 +178,10 @@ for t in threads:
 
 After execution, I checked `/dashboard` and saw my balance jump to **6000 units** confirming multiple bonuses were granted before the server marked the daily claim as complete.
 
-![image.png](Straightforward%201d48e29fdec780c9a67dfbcfcd18ba73/image%201.png)
+![image 1](https://github.com/user-attachments/assets/a0c2b878-751d-4739-bef7-401bd10e83b0)
 
-![image.png](Straightforward%201d48e29fdec780c9a67dfbcfcd18ba73/image%202.png)
+![image 2](https://github.com/user-attachments/assets/c7281081-20ee-4ce4-9700-68a2b084809c)
+
 
 ### Buying the Flag
 
@@ -205,7 +206,7 @@ Priority: u=0, i
 
 - The response contained the flag: `UMCS{...}`
     
-    ![image.png](Straightforward%201d48e29fdec780c9a67dfbcfcd18ba73/image%203.png)
+![image 3](https://github.com/user-attachments/assets/300424ac-d985-41c3-9651-21f2c767b69b)
     
     ---
     
