@@ -5,7 +5,7 @@
 UMCS CTF is a thrilling cybersecurity competition hosted by UM Cybersecurity Summit. 
 
 **Team C1RY**:
-- Afif Jazimin (RE)
-- Nur Ameera Chan (Web Exploitation)
-- Kho Jun Lin (Cryptography/Forensics)
-- Chang Kae Pin (Cryptography/Forensics)
+- Afif Jazimin (RE/Steganography)
+- Nur Ameera Chan (Web Exploitation/Steganography)
+- Kho Jun Lin (Cryptography)
+- Chang Kae Pin (Cryptography)
