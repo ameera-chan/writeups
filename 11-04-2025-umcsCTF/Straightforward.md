@@ -207,17 +207,16 @@ Priority: u=0, i
 - The response contained the flag: `UMCS{...}`
     
 ![image 3](https://github.com/user-attachments/assets/300424ac-d985-41c3-9651-21f2c767b69b)
+
     
-    ---
+  ## Why CSRF Failed?
     
-    ## Why CSRF Failed?
+  - The server correctly tied bonus credit to the authenticated user in the session. Without a server-side flaw, CSRF couldn’t reroute bonuses.
     
-    - The server correctly tied bonus credit to the authenticated user in the session. Without a server-side flaw, CSRF couldn’t reroute bonuses.
+### IDOR’s Role
     
-    ### IDOR’s Role
+  - It only revealed balances and was good for recon but useless for escalation.
     
-    - It only revealed balances and was good for recon but useless for escalation.
+### Race Condition Insight
     
-    ### Race Condition Insight
-    
-    - The lack of atomic transactions and poor SQLite handling allowed me to bypass balance restrictions and exploit the logic race.
+  - The lack of atomic transactions and poor SQLite handling allowed me to bypass balance restrictions and exploit the logic race.
