@@ -9,3 +9,10 @@ UMCS CTF is a thrilling cybersecurity competition hosted by UM Cybersecurity Sum
 - Nur Ameera Chan (Web Exploitation/Stegnography)
 - Kho Jun Lin (Cryptography)
 - Chang Kae Pin (Cryptography)
+
+## Writeups for UMCS CTF
+
+- [Broken](Broken.md)
+- [Hidden in Plain Graphic](Hidden in Plain Graphic.md)
+- [Straightforward](Straightforward.md)
+- [healthcheck](healthcheck.md)
