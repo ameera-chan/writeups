@@ -6,7 +6,7 @@
 - Afif Jazimin
 - Nur Ameera Chan
 
-## Writeups for Snyk CTF 2025-02-28
+## Writeups for Snyk CTF
 
 - [Coding Mountains](Coding-Mountains.md)
 - [Weblog](Weblog.md)
